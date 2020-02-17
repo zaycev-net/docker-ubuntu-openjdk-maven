@@ -7,6 +7,7 @@ RUN set -eux; \
 	apt-get update; \
 	apt-get install -y --no-install-recommends \
 		apt-utils \
+		language-pack-ru \
 		bzip2 \
 		unzip \
 		xz-utils \
@@ -15,6 +16,7 @@ RUN set -eux; \
 		fontconfig libfreetype6 \
 		mc zip unzip net-tools iputils-ping openssh-client rsync \
 		openjdk-13-jdk maven; \
-	    rm -rf /var/lib/apt/lists/*
+	    rm -rf /var/lib/apt/lists/*; \
+	    update-locale LANG=ru_RU.UTF-8;
 
 CMD ["bash"]
