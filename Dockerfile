@@ -1,5 +1,6 @@
 FROM ubuntu:19.10
 
+ENV LANG=ru_RU.utf8
 ENV TZ=UTC
 
 RUN set -eux; \
