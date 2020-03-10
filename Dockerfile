@@ -14,9 +14,9 @@ RUN set -eux; \
 		ca-certificates p11-kit \
 		binutils \
 		fontconfig libfreetype6 \
-		mc zip unzip net-tools iputils-ping openssh-client rsync \
+		mc zip unzip net-tools curl iputils-ping openssh-client rsync \
 		openjdk-13-jdk maven; \
-	    rm -rf /var/lib/apt/lists/*; \
-	    update-locale LANG=ru_RU.UTF-8;
+	rm -rf /var/lib/apt/lists/*; \
+	update-locale LANG=ru_RU.UTF-8;
 
 CMD ["bash"]
