@@ -1,7 +1,6 @@
 FROM adoptopenjdk:13-jdk-hotspot-bionic
 # https://github.com/docker-library/docs/blob/master/adoptopenjdk/README.md
 
-ENV LANG=ru_RU.utf8
 ENV TZ=UTC
 
 RUN set -eux; \
@@ -17,7 +16,6 @@ RUN set -eux; \
 		fontconfig libfreetype6 \
 		mc zip unzip net-tools curl iputils-ping openssh-client rsync \
 		maven; \
-	rm -rf /var/lib/apt/lists/*; \
-	update-locale LANG=ru_RU.UTF-8;
+	rm -rf /var/lib/apt/lists/*;
 
 CMD ["bash"]
