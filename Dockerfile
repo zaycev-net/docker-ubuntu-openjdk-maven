@@ -1,4 +1,5 @@
-FROM ubuntu:19.10
+FROM adoptopenjdk:13-jdk-hotspot-bionic
+# https://github.com/docker-library/docs/blob/master/adoptopenjdk/README.md
 
 ENV LANG=ru_RU.utf8
 ENV TZ=UTC
@@ -15,7 +16,7 @@ RUN set -eux; \
 		binutils \
 		fontconfig libfreetype6 \
 		mc zip unzip net-tools curl iputils-ping openssh-client rsync \
-		openjdk-13-jdk maven; \
+		maven; \
 	rm -rf /var/lib/apt/lists/*; \
 	update-locale LANG=ru_RU.UTF-8;
 
