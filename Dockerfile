@@ -16,6 +16,10 @@ RUN set -eux; \
 		fontconfig libfreetype6 \
 		mc zip unzip net-tools curl iputils-ping openssh-client rsync \
 		maven; \
-	rm -rf /var/lib/apt/lists/*;
+	rm -rf /var/lib/apt/lists/*; \
+#
+	cat /etc/lsb-release; \
+    java --version; \
+    mvn -v;
 
 CMD ["bash"]
