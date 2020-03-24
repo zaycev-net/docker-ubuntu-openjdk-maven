@@ -1,4 +1,4 @@
-FROM adoptopenjdk:13-jdk-hotspot-bionic
+FROM adoptopenjdk:11-jdk-hotspot-bionic
 # https://github.com/docker-library/docs/blob/master/adoptopenjdk/README.md
 
 ENV TZ=UTC
