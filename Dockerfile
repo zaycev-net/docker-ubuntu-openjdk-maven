@@ -14,7 +14,7 @@ RUN set -eux; \
 		ca-certificates p11-kit \
 		binutils \
 		fontconfig libfreetype6 \
-		mc zip unzip net-tools curl iputils-ping openssh-client rsync \
+		mc zip unzip net-tools curl iputils-ping dnsutils openssh-client mysql-client rsync \
 		maven; \
 	rm -rf /var/lib/apt/lists/*; \
 #
