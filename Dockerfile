@@ -22,4 +22,4 @@ RUN set -eux; \
     java --version; \
     mvn -v;
 
-CMD ["bash"]
+ENTRYPOINT ["/bin/bash"]
