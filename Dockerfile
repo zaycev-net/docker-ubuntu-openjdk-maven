@@ -1,4 +1,4 @@
-FROM adoptopenjdk:14.0.2_12-jdk-hotspot-focal
+FROM adoptopenjdk:15.0.2_7-jdk-hotspot-focal
 # https://github.com/docker-library/docs/blob/master/adoptopenjdk/README.md
 
 ENV TZ=UTC
