@@ -15,6 +15,7 @@ RUN set -eux; \
 		binutils \
 		fontconfig libfreetype6 \
 		mc zip unzip net-tools curl iputils-ping dnsutils openssh-client mysql-client rsync telnet \
+		borgbackup \
 		maven; \
 	rm -rf /var/lib/apt/lists/*; \
 #
