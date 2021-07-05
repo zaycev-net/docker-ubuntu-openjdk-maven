@@ -15,9 +15,11 @@ RUN set -eux; \
 		binutils \
 		fontconfig libfreetype6 \
 		mc zip unzip net-tools curl iputils-ping dnsutils openssh-client mysql-client rsync telnet \
-		borgbackup \
-		maven; \
+		borgbackup; \
 	rm -rf /var/lib/apt/lists/*; \
+
+	curl https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz | tar -xzf - -C /usr/local/ ; \
+    export PATH=/usr/local/apache-maven-3.6.3/bin:$PATH; \
 #
 	cat /etc/lsb-release; \
     java --version; \
