@@ -25,4 +25,5 @@ RUN set -eux; \
     java --version; \
     mvn -v;
 
+ENV PATH=/usr/local/apache-maven-3.6.3/bin:$PATH
 CMD ["bash"]
